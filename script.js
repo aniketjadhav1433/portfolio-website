@@ -216,7 +216,18 @@ let proCards  = document.querySelectorAll(".projects-card .card1")
 let all = document.querySelector(".all")
 let proButton = document.querySelectorAll('menu button')
 
+let removeProBtn = ()=>{
+    proButton.forEach((btns)=>{
+        btns.classList.remove("pro-act")
+    })
+}
 
+proButton.forEach((btns)=>{
+    btns.addEventListener("click",()=>{
+        removeProBtn()
+        btns.classList.add("pro-act")
+    })
+})
 
 proButton.forEach((butts)=>{
     let value = butts.textContent.toLocaleLowerCase()
