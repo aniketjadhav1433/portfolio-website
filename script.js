@@ -258,3 +258,31 @@ proButton.forEach((butts)=>{
     
 })
 
+// ================================== gsap ===========================
+ 
+let tl = gsap.timeline()
+
+tl.from(".info img",{
+    y:200,
+    duration:1,
+    opacity:0,
+    scrub:1
+})
+tl.from(".info h3",{
+    y:100,
+    duration:0.5,
+    scrub:1,
+    opacity:0
+})
+tl.from(".info h2",{
+    y:100,
+    duration:0.5,
+    scrub:1,
+    opacity:0
+})
+tl.from(".info p",{
+    y:100,
+    duration:0.5,
+    opacity:0,
+    scrub:1
+})

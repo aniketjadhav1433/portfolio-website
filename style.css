@@ -188,6 +188,7 @@
     color: var(--color-primary);
 }
 .info{
+    overflow: hidden;
     line-height: 2.2rem;
 }
 
