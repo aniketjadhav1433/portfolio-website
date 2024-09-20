@@ -286,3 +286,33 @@ tl.from(".info p",{
     opacity:0,
     scrub:1
 })
+
+
+
+gsap.from(".exp-left button",{
+    x:-100,
+    opacity:0,
+    duration:2,
+    stagger:0.4,
+    scrollTrigger:{
+        trigger:".exp-left",
+        scroll:"body",
+        start:"top 10%",
+        end:"top 40%",
+        scrub:2
+    }
+})
+
+gsap.from(".exp-right .cards",{
+    x:-100,
+    duration:2,
+    scale:0,
+    opacity:0,
+    scrollTrigger:{
+        trigger:".exp-right",
+        scroll:"body",
+        start:"top 10%",
+        end:"top 30%",
+        scrub:2
+    }
+})

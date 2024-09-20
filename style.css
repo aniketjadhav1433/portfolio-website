@@ -258,6 +258,7 @@
     flex-direction: column;
     gap: 20px;
     justify-content: center;
+    overflow: hidden;
 }
 
 .exp-right{
